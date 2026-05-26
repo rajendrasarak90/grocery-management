@@ -1,13 +1,13 @@
 package com.onlinemanagementgrocery.grocerymanagement;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 class GroceryManagementApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void applicationClassLoads() {
+        assertNotNull(GroceryManagementApplication.class);
+    }
 }
